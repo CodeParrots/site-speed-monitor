@@ -243,23 +243,12 @@ module.exports = function( grunt ) {
 		wp_readme_to_markdown: {
 			options: {
 				post_convert: function( readme ) {
-
 					var matches = readme.match( /\*\*Tags:\*\*(.*)\r?\n/ ),
 					    tags    = matches[1].trim().split( ', ' ),
 					    section = matches[0];
 
-					// WordPress tags
 					for ( var i = 0; i < tags.length; i++ ) {
-
-						section = section.replace( tags[i], '[' + tags[i] + '](https://WordPress.org/plugins/tags/' + tags[i] + '/)' );
-
-					}
-
-					// Banner
-					if ( grunt.file.exists( 'wp-org-assets/banner-1544x500.png' ) ) {
-
-						readme = readme.replace( '**Contributors:**', "![Banner Image](wp-org-assets/banner-1544x500.png)\r\n\r\n**Contributors:**" );
-
+						section = section.replace( tags[i], '[' + tags[i] + '](https://wordpress.org/themes/tags/' + tags[i] + '/)' );
 					}
 
 					// Tag links
@@ -268,11 +257,10 @@ module.exports = function( grunt ) {
 					// Badges
 					readme = readme.replace( '## Description ##', grunt.template.process( pkg.badges.join( ' ' ) ) + "  \r\n\r\n## Description ##" );
 
-					// YouTube links
+					// YouTube
 					readme = readme.replace( /\[youtube\s+(?:https?:\/\/www\.youtube\.com\/watch\?v=|https?:\/\/youtu\.be\/)(.+?)\]/g, '[![Play video on YouTube](https://img.youtube.com/vi/$1/maxresdefault.jpg)](https://www.youtube.com/watch?v=$1)' );
 
 					return readme;
-
 				}
 			},
 			main: {

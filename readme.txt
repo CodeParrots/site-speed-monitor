@@ -1,6 +1,6 @@
 === Site Speed Monitor ===
 Contributors: codeparrots, eherman24
-Tags: website, speed, test, webpagetest, report, monitor, tester, site, check,
+Tags: website, speed, test, webpagetest, report, monitor, tester, check, chart, graph
 Requires at least: 4.0
 Requires PHP: 5.6
 Tested up to: 4.8.1

@@ -1,0 +1,63 @@
+sudo: false
+
+language: php
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+branches:
+  only:
+    - /^v\d.*$/
+    - master
+    - develop
+
+php:
+  - 5.2
+  - 5.6
+  - 7.1
+
+env:
+  - WP_VERSION=4.4 WP_MULTISITE=0
+  - WP_VERSION=latest WP_MULTISITE=0
+  - WP_VERSION=trunk WP_MULTISITE=0
+
+matrix:
+  fast_finish: true
+  exclude:
+    - php: 7.1
+      env: WP_VERSION=4.4 WP_MULTISITE=0
+
+install:
+  - export DEV_LIB_PATH=bin/dev-lib
+  - export DEV_LIB_SKIP=codeception,jscs,jshint,yuicompressor,phpunit,xmllint
+  - if [ ! -e "$DEV_LIB_PATH" ] && [ -L .travis.yml ]; then export DEV_LIB_PATH=$( dirname $( readlink .travis.yml ) ); fi
+  - if [ ! -e "$DEV_LIB_PATH" ]; then git clone https://github.com/xwp/wp-dev-lib.git DEV_LIB_PATH; fi
+  - source $DEV_LIB_PATH/travis.install.sh
+  - curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
+  - chmod +x /tmp/wp-cli.phar
+
+script:
+  - source $DEV_LIB_PATH/travis.script.sh
+
+after_script:
+  - source $DEV_LIB_PATH/travis.after_script.sh
+
+before_deploy:
+  - npm install
+  - grunt build
+
+deploy:
+  provider: releases
+  api_key:
+    secure: nZeGCRawe6Vh/D6Cll8Egu1oRCpB14x4w1G35yfYrjWqL7Hak+C5+Se4TziTX2RudQX0JV7jlaydqKSrNaChlLkIrAd2DUt8SRgZrWuh18VXFVcOM6gWEvDBdiHOdN7TMlkFM6a3VM3aiMpZqsNbYF4GrMYeZ6coJMdV6Sy6eLpux8hPNbK17fKmdBW+oZor54/arLV9gdPmfPGq/lcdC2/hk9BMOlwZ0dpqH7kS27PDF4gmIVUCgIq+zg4SLqWGMsaZaDzygjBPjL6CKz9ZT+MswplWtz6QTIPfvJVm4tLip9wa9HMv65COo7L1j/1fXwakC4VCGIpGy1m/cDqnL37gAF1wQZXXGrV9JPG7PpOGyNahQZwPoYY8OUJCB+k9AmEwg6s9oBRWFBcY9PQW9sMH5UEGIXerqWfETy7qxGUqKElxogEnYKB/m/YzFhfw72Ew9Ra+AdMjgZOE+KoPo57AYQgbOw1WtPxQDqbWFCuennw2eD+l8WVWGogKEB6f8q0QnzpP+3mjxoSV99nx0sv126YowCrK0r2o5HOztPXp7ArtC3fZWdlGnjx/XWHfwlv75YnI71gD413ffGUXtk4xsCbD3vNOChBlAVphQfJcTscfUDknJFaCB7w7V8pyPXKTuRirBxtSQjddFG21zAOELDZntBgPZ/0Ixu9VJmA=
+  file_glob: true
+  file: site-speed-monitor-*.zip
+  on:
+    tags: true
+    repo: CodeParrots/site-speed-monitor
+    php: '7.1'
+    condition: "$WP_VERSION=trunk"
+  skip_cleanup: true
+  overwrite: true

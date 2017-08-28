@@ -1,0 +1,187 @@
+/**
+ * Admin Widget Styles
+ */
+
+/**
+ * Hide the icon in the 'Screen Options' dropdown.
+ */
+#adv-settings label[for="site_speed_monitor_widget-hide"] .icon {
+	display: none !important;
+}
+
+#site_speed_monitor_widget .averages-wrap {
+	display: flex;
+	margin: 1em 0;
+}
+
+#site_speed_monitor_widget div.no-tests {
+	padding: 1em 0;
+	text-align: center;
+}
+
+#site_speed_monitor_widget div.no-tests h3 {
+	color: #444444;
+	padding: 1.5em 1em;
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+	font-style: italic;
+	opacity: 0.5;
+	font-weight: 600;
+	font-family: "OpenSans";
+}
+
+#site_speed_monitor_widget .widget-notices {
+	display: block;
+	margin-top: 1em;
+}
+
+/**
+ * Table Styles
+ */
+#site_speed_monitor_widget th.column-first_view,
+#site_speed_monitor_widget #the-list td.column-first_view,
+#site_speed_monitor_widget th.column-repeat_view,
+#site_speed_monitor_widget #the-list td.column-repeat_view,
+#site_speed_monitor_widget #the-list td.grade.column-grade {
+	text-align: center;
+}
+
+	#site_speed_monitor_widget #the-list td.grade.column-grade div.grade:hover {
+		cursor: pointer;
+	}
+
+	#site_speed_monitor_widget #the-list td.grade.column-grade .force-complete,
+	#site_speed_monitor_widget #the-list td.grade.column-grade .cancel-test {
+		font-size: xx-small;
+	}
+
+#site_speed_monitor_widget .site-speed-monitor-list.tests .tablenav.top {
+	display: none !important;
+}
+
+/**
+ * Form Styles
+ */
+#site_speed_monitor_widget .site-speed-monitor-list.no-tests .tablenav {
+	display: none;
+}
+
+#site_speed_monitor_widget .site-speed-monitor-list.no-tests {
+	margin: 20px 0;
+}
+
+#site_speed_monitor_widget form#site-speed-monitor div.actions {
+	display: inline-block;
+	width: 100%;
+}
+
+	#site_speed_monitor_widget form#site-speed-monitor div.actions .notice-warning {
+		margin-top: 0;
+	}
+
+	#site_speed_monitor_widget .site-speed-monitor-notice + .load-time-averages,
+	#site_speed_monitor_widget .site-speed-monitor-notice + .site-speed-monitor-list.tests {
+		margin-top: 20px;
+	}
+
+	#site_speed_monitor_widget form#site-speed-monitor div.actions input[type="submit"] + .site-speed-monitor-notice,
+	#site_speed_monitor_widget form#site-speed-monitor div.actions a + .site-speed-monitor-notice {
+		float: left;
+		margin-top: 10px;
+	}
+
+/**
+ * Load time Averages
+ */
+#site_speed_monitor_widget .load-time-averages  {
+	display: inline-block;
+	width: 100%;
+}
+
+	#site_speed_monitor_widget .load-time-averages .average {
+		display: inline-block;
+		float: right;
+		font-size: 18px;
+		width: 50%;
+		text-align: center;
+		padding: .5em 0;
+		margin: .5em 0;
+		font-weight: bold;
+	}
+
+		#site_speed_monitor_widget .load-time-averages .average.average {
+			color: orange;
+		}
+
+		#site_speed_monitor_widget .load-time-averages .average.last-run {
+			color: inherit;
+			border-left: none;
+		}
+
+		#site_speed_monitor_widget .load-time-averages .average.great {
+			color: #3c763d;
+		}
+
+		#site_speed_monitor_widget .load-time-averages .average.poor {
+			color: #a94442;
+		}
+
+		#site_speed_monitor_widget .load-time-averages .average span {
+			display: block;
+			width: 100%;
+			font-weight: normal;
+			color: #666;
+			font-size: small;
+		}
+
+/**
+ * Load time badges
+ */
+span.badge {
+	background-color: #e0dbdb;
+	border: 1px solid transparent;
+	color: white;
+	padding: 1px 3px;
+	font-size: normal;
+	font-weight: light;
+	font-size: 9px;
+}
+
+	span.badge.great {
+		color: #3c763d;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+	}
+
+	span.badge.average {
+		color: #8a6d3b;
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+	}
+
+	span.badge.poor {
+		color: #a94442;
+		background-color: #f2dede;
+		border-color: #ebccd1;
+	}
+
+/**
+ * Notices
+ */
+#site_speed_monitor_widget .site-speed-monitor-notice {
+	background: #fff;
+	border-right-width: 4px;
+	border-right-style: solid;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	margin: 5px 0 2px;
+	padding: 1px 12px
+}
+
+#site_speed_monitor_widget .actions .site-speed-monitor-notice {
+	margin-top: 20px;
+}
+
+#site_speed_monitor_widget .actions .site-speed-monitor-notice a {
+	float: none;
+}

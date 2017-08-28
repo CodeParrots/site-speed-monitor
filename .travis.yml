@@ -14,7 +14,6 @@ branches:
     - develop
 
 php:
-  - 5.2
   - 5.6
   - 7.1
 
@@ -33,10 +32,8 @@ install:
   - export DEV_LIB_PATH=bin/dev-lib
   - export DEV_LIB_SKIP=codeception,jscs,jshint,yuicompressor,phpunit,xmllint
   - if [ ! -e "$DEV_LIB_PATH" ] && [ -L .travis.yml ]; then export DEV_LIB_PATH=$( dirname $( readlink .travis.yml ) ); fi
-  - if [ ! -e "$DEV_LIB_PATH" ]; then git clone https://github.com/xwp/wp-dev-lib.git DEV_LIB_PATH; fi
+  - if [ ! -e "$DEV_LIB_PATH" ]; then git clone https://github.com/xwp/wp-dev-lib.git $DEV_LIB_PATH; fi
   - source $DEV_LIB_PATH/travis.install.sh
-  - curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
-  - chmod +x /tmp/wp-cli.phar
 
 script:
   - source $DEV_LIB_PATH/travis.script.sh
@@ -46,12 +43,15 @@ after_script:
 
 before_deploy:
   - npm install
+  # Regenerate our documentation to include any new actions/filters
+  - grunt docs
+  # Build the plugin for deployment
   - grunt build
 
 deploy:
   provider: releases
   api_key:
-    secure: nZeGCRawe6Vh/D6Cll8Egu1oRCpB14x4w1G35yfYrjWqL7Hak+C5+Se4TziTX2RudQX0JV7jlaydqKSrNaChlLkIrAd2DUt8SRgZrWuh18VXFVcOM6gWEvDBdiHOdN7TMlkFM6a3VM3aiMpZqsNbYF4GrMYeZ6coJMdV6Sy6eLpux8hPNbK17fKmdBW+oZor54/arLV9gdPmfPGq/lcdC2/hk9BMOlwZ0dpqH7kS27PDF4gmIVUCgIq+zg4SLqWGMsaZaDzygjBPjL6CKz9ZT+MswplWtz6QTIPfvJVm4tLip9wa9HMv65COo7L1j/1fXwakC4VCGIpGy1m/cDqnL37gAF1wQZXXGrV9JPG7PpOGyNahQZwPoYY8OUJCB+k9AmEwg6s9oBRWFBcY9PQW9sMH5UEGIXerqWfETy7qxGUqKElxogEnYKB/m/YzFhfw72Ew9Ra+AdMjgZOE+KoPo57AYQgbOw1WtPxQDqbWFCuennw2eD+l8WVWGogKEB6f8q0QnzpP+3mjxoSV99nx0sv126YowCrK0r2o5HOztPXp7ArtC3fZWdlGnjx/XWHfwlv75YnI71gD413ffGUXtk4xsCbD3vNOChBlAVphQfJcTscfUDknJFaCB7w7V8pyPXKTuRirBxtSQjddFG21zAOELDZntBgPZ/0Ixu9VJmA=
+    secure: Ac2rMLhmObDfpQ2FNN90oChJ6LEgBmAoimKgaNxkcrE3qcrLvBV60Byfl3mNPUn9uV3l342Cus7upbJVL2yZFLPGqRpAT2zpPRmrns6L12I13m8BjdxJBysFFa4cePYgK12DgfmR2yKm+wM5OlI1rKyqrUlJN9kpHGjqt4DKa1TLOCiDhLJDFoba1QCE4+E6XdgtxNnG8Z55DDjB9h8c+Fl07Gfw/nmG5YJ7Xb+vG30r5Iy4X7ibfPgW7XJafS/FmRhGCtEsAaVwRL4CBJSFWQmEwFyPwke1CEjMAHd0q4Kyb+8fOiTP1YNSsxNSIkU1GLCx10lpgBP8fe5W+GEfd3j4n2C6ogfuCYMZhcEodm2897D1OoDZeaiXaKyy6qDUcx+m/pTNsDfRkewQdtl5NTE04jyldv7L8xlSlCCTS5E3oFT5tQme6bJQMKwZ4s0AVWYuLwUGijOQzaZU1ZrUfuhpyfugj+1ICypxdksIH/hev/LtuYRqbg6UQCocs8hrtAgCwCmSLb6nXNHHDIJhZGDTmF+ZXz5487tru9p45VdE7Gxfq2UfZxZRmnmlSuLut20B6IJkca7HlSocULqtCaYdMnK+e4ageGtJEcV2dnNEDaXd+kY4ktSz2/Uf8hjJiKWAdkBJYSTmDTZzOAj0TrBQ0ff3/sHk3YQg2nkOFn0=
   file_glob: true
   file: site-speed-monitor-*.zip
   on:

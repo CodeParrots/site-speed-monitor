@@ -10,7 +10,7 @@
 
 Site Speed Monitor allows you to monitor your website load times automatically while tracking it's performance.
 
-[![CircleCI](https://circleci.com/gh/CodeParrots/site-speed-monitor/tree/master.svg?style=svg)](https://circleci.com/gh/CodeParrots/site-speed-monitor/tree/master) [![devDependencies Status](https://david-dm.org/codeparrots/wp-site-speed-monitor/master/dev-status.svg)](https://david-dm.org/codeparrots/wp-site-speed-monitor/master?type=dev) [![License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/codeparrots/wp-site-speed-monitor/blob/master/license.txt) [![PHP >= 5.6](https://img.shields.io/badge/php-%3E=%205.6-8892bf.svg)](https://secure.php.net/supported-versions.php) [![WordPress >= 4.4](https://img.shields.io/badge/wordpress-%3E=%204.4-blue.svg)](https://wordpress.org/download/release-archive/)  
+[![Build Status](https://travis-ci.org/CodeParrots/site-speed-monitor.svg?branch=master)](https://travis-ci.org/CodeParrots/site-speed-monitor) [![devDependencies Status](https://david-dm.org/codeparrots/wp-site-speed-monitor/master/dev-status.svg)](https://david-dm.org/codeparrots/wp-site-speed-monitor/master?type=dev) [![License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/codeparrots/wp-site-speed-monitor/blob/master/license.txt) [![PHP >= 5.6](https://img.shields.io/badge/php-%3E=%205.6-8892bf.svg)](https://secure.php.net/supported-versions.php) [![WordPress >= 4.4](https://img.shields.io/badge/wordpress-%3E=%204.4-blue.svg)](https://wordpress.org/download/release-archive/)  
 
 ## Description ##
 

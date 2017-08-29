@@ -5,7 +5,7 @@
  * Description: Site Speed Monitor allows you to monitor your website load times using the WebPageTest.org API.
  * Author:      Code Parrots
  * Author URI:  https://www.codeparrots.com
- * Version:     0.0.9
+ * Version:     1.0.0
  * Text Domain: site-speed-monitor
  * Domain Path: /languages/
  * License:     GPL v2 or later
@@ -51,7 +51,7 @@ if ( ! class_exists( 'Site_Speed_Monitor' ) ) {
 		 *
 		 * @since 1.0.0
 		 */
-		public static $version = '0.0.9';
+		public static $version = '1.0.0';
 
 		/**
 		 * Minimum PHP version

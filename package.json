@@ -2,7 +2,7 @@
 	"name": "site-speed-monitor",
 	"title": "WP Site Speed Monitor",
 	"description": "Quickly, easily and automatically check your website speed using the WebPageTest.org API.",
-	"version": "0.0.9",
+	"version": "1.0.0",
 	"author": "Code Parrots",
 	"license": "GPL-2.0",
 	"repository": "codeparrots/wp-site-speed-monitor",

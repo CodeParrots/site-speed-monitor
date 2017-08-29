@@ -1,0 +1,531 @@
+/**
+ * Site Speed Monitor - Chart Styles
+ */
+
+/* wrap */
+body.tools_page_site-speed-monitor-tools #wpcontent {
+	padding-left: 0;
+}
+
+body.tools_page_site-speed-monitor-tools .wrap {
+	margin: 0;
+}
+
+body.tools_page_site-speed-monitor-tools div.notice {
+	margin: 1.5em 2em ;
+}
+
+body.tools_page_site-speed-monitor-tools .wrap #poststuff {
+	margin: 1em 2em
+}
+
+body.tools_page_site-speed-monitor-tools .wrap .description {
+	margin: 2em 2em 0em 2em;
+	background: #fefefe;
+	padding: 15px 10px;
+	border: 1px solid #e5e5e5;
+}
+
+	body.tools_page_site-speed-monitor-tools .wrap .inside .description {
+		margin: 0;
+		background: inherit;
+		padding: 0;
+		border: none;
+	}
+
+body.tools_page_site-speed-monitor-tools .wrap .inside h3 {
+	margin-bottom: 5px;
+}
+
+/* end wrap */
+
+/*
+ * Header
+ */
+body.tools_page_site-speed-monitor-tools .wrap .header {
+	padding: 4em 2em;
+	background: url( "../images/header-pattern.png" ) #363b3f;
+	background-size: 110px;
+	background-repeat: repeat;
+	position: relative;
+}
+
+body.tools_page_site-speed-monitor-tools .wrap .header .site-speed-monitor-icon {
+	margin-right: 10px;
+	margin-top: -10px;
+	float: left;
+}
+
+body.tools_page_site-speed-monitor-tools .wrap .header .parrot-mascot {
+	position: absolute;
+	right: 0;
+	bottom: -4px;
+	right: 10px;
+}
+
+	body.tools_page_site-speed-monitor-tools .wrap .header .parrot-mascot .parrot {
+		width: 188px;
+	}
+
+.site-speed-monitor-icon {
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9IiNmYWxzZSIgPjxnIGlkPSJzdXJmYWNlMSI+PHBhdGggc3R5bGU9IiBmaWxsOiM3OTg2Q0I7IiBkPSJNIDI0IDggQyAxMy41MDc4MTMgOCA1IDE2LjUwNzgxMyA1IDI3IEMgNSAzMS41NTQ2ODggNi42MDU0NjkgMzUuNzI2NTYzIDkuMjczNDM4IDM5IEwgMTAuNzczNDM4IDM2IEwgMzcuMjI2NTYzIDM2IEwgMzguNzI2NTYzIDM5IEMgNDEuMzk0NTMxIDM1LjcyNjU2MyA0MyAzMS41NTQ2ODggNDMgMjcgQyA0MyAxNi41MDc4MTMgMzQuNDkyMTg4IDggMjQgOCBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojRUNFRkYxOyIgZD0iTSA0MCAyNyBDIDQwIDE4LjE2NDA2MyAzMi44MzU5MzggMTEgMjQgMTEgQyAxNS4xNjQwNjMgMTEgOCAxOC4xNjQwNjMgOCAyNyBDIDggMzAuMzM5ODQ0IDkuMDIzNDM4IDMzLjQzNzUgMTAuNzczNDM4IDM2IEwgOS4yNzM0MzggMzkgTCAzOC43MjY1NjMgMzkgTCAzNy4yMjY1NjMgMzYgQyAzOC45NzY1NjMgMzMuNDM3NSA0MCAzMC4zMzk4NDQgNDAgMjcgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6IzQ1NUE2NDsiIGQ9Ik0gOC4wMzEyNSAyNiBDIDguMDExNzE5IDI2LjMzMjAzMSA4IDI2LjY2MDE1NiA4IDI3IEMgOCAyNy4zMzk4NDQgOC4wMTE3MTkgMjcuNjY3OTY5IDguMDMxMjUgMjggTCAxMi4wNTA3ODEgMjggQyAxMi4wMjM0MzggMjcuNjcxODc1IDEyIDI3LjMzOTg0NCAxMiAyNyBDIDEyIDI2LjY2MDE1NiAxMi4wMjM0MzggMjYuMzI4MTI1IDEyLjA1MDc4MSAyNiBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojNDU1QTY0OyIgZD0iTSAxNC4yMTg3NSAzMy45MTQwNjMgQyAxMy44MjQyMTkgMzMuMzc4OTA2IDEzLjQ3NjU2MyAzMi44MDg1OTQgMTMuMTc1NzgxIDMyLjIxMDkzOCBMIDkuNzQyMTg4IDM0LjI5Mjk2OSBDIDEwLjA1ODU5NCAzNC44ODY3MTkgMTAuMzkwNjI1IDM1LjQ1MzEyNSAxMC43NzM0MzggMzYgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6IzQ1NUE2NDsiIGQ9Ik0gMTYuOTQ1MzEzIDE3LjMwODU5NCBDIDE3LjQ4NDM3NSAxNi45MTQwNjMgMTguMDU0Njg4IDE2LjU3MDMxMyAxOC42NTIzNDQgMTYuMjY5NTMxIEwgMTYuNjEzMjgxIDEyLjgwNDY4OCBDIDE2LjAxOTUzMSAxMy4xMTcxODggMTUuNDI1NzgxIDEzLjQ3MjY1NiAxNC44Nzg5MDYgMTMuODUxNTYzIFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiM0NTVBNjQ7IiBkPSJNIDEzLjEyODkwNiAyMS45NDE0MDYgQyAxMy40MTQwNjMgMjEuMzMyMDMxIDEzLjczODI4MSAyMC43NSAxNC4xMTcxODggMjAuMTk5MjE5IEwgMTAuNjY3OTY5IDE4LjE0ODQzOCBDIDEwLjMwNDY4OCAxOC43MDMxMjUgOS45MjU3ODEgMTkuMzU1NDY5IDkuNjI4OTA2IDE5Ljk1MzEyNSBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojNDU1QTY0OyIgZD0iTSAyNSAxNS4wNTA3ODEgTCAyNSAxMS4wMzEyNSBDIDI0LjY2Nzk2OSAxMS4wMTE3MTkgMjQuMzM1OTM4IDExIDI0IDExIEMgMjMuNjY0MDYzIDExIDIzLjMzMjAzMSAxMC45ODA0NjkgMjMgMTEgTCAyMyAxNS4wNTA3ODEgQyAyMy4zMzIwMzEgMTUuMDIzNDM4IDIzLjY2NDA2MyAxNSAyNCAxNSBDIDI0LjMzNTkzOCAxNSAyNC42Njc5NjkgMTUuMDIzNDM4IDI1IDE1LjA1MDc4MSBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojNDU1QTY0OyIgZD0iTSAzMy43Njk1MzEgMzQuMDE1NjI1IEwgMzcuMjQ2MDk0IDM2IEMgMzcuNjEzMjgxIDM1LjQ0NTMxMyAzNy45ODA0NjkgMzQuODI0MjE5IDM4LjI3NzM0NCAzNC4yMjY1NjMgTCAzNC43NTM5MDYgMzIuMjczNDM4IEMgMzQuNDY4NzUgMzIuODgyODEzIDM0LjE0NDUzMSAzMy40Njg3NSAzMy43Njk1MzEgMzQuMDE1NjI1IFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiM0NTVBNjQ7IiBkPSJNIDM5Ljk2ODc1IDI4IEMgMzkuOTg4MjgxIDI3LjY2Nzk2OSA0MCAyNy4zMzk4NDQgNDAgMjcgQyA0MCAyNi42NjAxNTYgMzkuOTg4MjgxIDI2LjMzMjAzMSAzOS45Njg3NSAyNiBMIDM1Ljk0OTIxOSAyNiBDIDM1Ljk3NjU2MyAyNi4zMjgxMjUgMzYgMjYuNjYwMTU2IDM2IDI3IEMgMzYgMjcuMzM5ODQ0IDM1Ljk3NjU2MyAyNy42NzE4NzUgMzUuOTQ5MjE5IDI4IFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiM0NTVBNjQ7IiBkPSJNIDMyLjgxMjUgMTMuNjQ0NTMxIEMgMzIuMjU3ODEzIDEzLjI3NzM0NCAzMS42NDQ1MzEgMTIuOTI1NzgxIDMxLjA0Mjk2OSAxMi42MzI4MTMgTCAyOS4wNTg1OTQgMTYuMTI4OTA2IEMgMjkuNjY3OTY5IDE2LjQxNDA2MyAzMC4yNTM5MDYgMTYuNzM4MjgxIDMwLjgwMDc4MSAxNy4xMTcxODggWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6IzkwQTRBRTsiIGQ9Ik0gMjAgMzIgTCAyOCAzMiBMIDI4IDM0IEwgMjAgMzQgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTojRkYxNzQ0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6NDsiIGQ9Ik0gMjQgMjcgTCAzNiAyMCAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0ZGMTc0NDsiIGQ9Ik0gMjMuODg2NzE5IDIzLjkwNjI1IEMgMjUuNTExNzE5IDIzLjkwNjI1IDI2LjgzMjAzMSAyNS4yMjI2NTYgMjYuODMyMDMxIDI2Ljg0NzY1NiBDIDI2LjgzMjAzMSAyOC40NzY1NjMgMjUuNTE1NjI1IDI5Ljc5Mjk2OSAyMy44ODY3MTkgMjkuNzkyOTY5IEMgMjIuMjYxNzE5IDI5Ljc5Mjk2OSAyMC45NDUzMTMgMjguNDc2NTYzIDIwLjk0NTMxMyAyNi44NDc2NTYgQyAyMC45NDUzMTMgMjUuMjI2NTYzIDIyLjI2MTcxOSAyMy45MDYyNSAyMy44ODY3MTkgMjMuOTA2MjUgWiAiPjwvcGF0aD48L2c+PC9zdmc+') 50% 50% no-repeat;
+	background-size: 100%;
+	width: 100px;
+	height: 97px;
+	display: inline-block;
+}
+
+	body.settings_page_site-speed-monitor .wrap .header .site-speed-monitor-icon {
+		margin-right: 10px;
+		margin-top: -8px;
+		float: left;
+	}
+
+/**
+ * Text Logo
+ */
+.site-speed-monitor-text {
+	position: relative;
+	height: 80px;
+	width: 155px;
+	background: url( '../images/site-speed-monitor-text-white.png' );
+	background-size: 190px;
+	margin-left: 85px;
+	background-repeat: no-repeat;
+}
+
+	.site-speed-monitor-text span.version {
+		position: absolute;
+		right: -3px;
+		bottom: 7px;
+		font-size: 12px;
+		color: #fbfbfb;
+		font-weight: 200;
+		font-family: "OpenSans";
+	}
+/* end header */
+
+body.tools_page_site-speed-monitor-tools .wrap h2.nav-tab-wrapper,
+body.tools_page_site-speed-monitor-tools #poststuff h2.nav-tab-wrapper {
+	padding-bottom: 0;
+	margin-bottom: 1em;
+}
+
+body.tools_page_site-speed-monitor-tools #speed-test-chart {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+body.tools_page_site-speed-monitor-tools .chart-options {
+	display: block;
+	margin-top: 1em;
+	padding: 10px;
+	border: 1px solid lightgrey;
+}
+
+	body.tools_page_site-speed-monitor-tools .chart-options h4 {
+		margin-top: 0;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chart-options .chart-option-label {
+		margin-right: 5px;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chart-options .chart-option-label .js-option-tooltip {
+		font-size: 16px;
+		height: 16px;
+		width: 16px;
+		border-bottom: none;
+		vertical-align: middle;
+	}
+
+body.tools_page_site-speed-monitor-tools .chart-options-notice {
+	margin: 0 0 1em 0 !important;
+}
+
+body.tools_page_site-speed-monitor-tools .chart-options-notice .preloader {
+	float: left;
+	margin: 2px 5px 0 0;
+}
+
+/**
+ * Custom Tooltips
+ */
+body.tools_page_site-speed-monitor-tools .chartjs-tooltip {
+	opacity: 1;
+	/*position: absolute;*/
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	border-radius: 3px;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
+	pointer-events: none;
+	padding: 4px;
+}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .interior {
+		padding: 5px;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .interior h2 {
+		color: #fefefe;
+		padding: 0 0 5px 0 !important;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .interior h4 {
+		color: #fefefe;
+		text-decoration: underline;
+		margin: 5px 0;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .interior .added {
+		color: #cdffd8;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .interior .removed {
+		color: #f9acb4;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip .display-color {
+		height: 15px;
+		width: 15px;
+		float: left;
+		margin-right: 5px;
+	}
+
+	body.tools_page_site-speed-monitor-tools .chartjs-tooltip:empty {
+		display: none;
+	}
+
+/**
+ * Tools
+ */
+ /**
+  * Grades
+  */
+ .tools_page_site-speed-monitor-tools div.grade {
+ 	padding: 5px;
+ 	background-color: #e0dbdb;
+ 	color: #ffffff;
+ 	width: 15px;
+ 	text-align: center;
+ 	border: 1px solid transparent;
+ 	border-radius: 3px;
+ 	margin: 0 auto;
+ }
+
+ 	.tools_page_site-speed-monitor-tools div.grade-a {
+ 		color: #3c763d;
+ 		background-color: #dff0d8;
+ 		border-color: #d6e9c6;
+ 	}
+
+ 	.tools_page_site-speed-monitor-tools div.grade-b {
+ 		color: #31708f;
+ 		background-color: #d9edf7;
+ 		border-color: #bce8f1;
+ 	}
+
+ 	.tools_page_site-speed-monitor-tools div.grade-c {
+ 		color: #8a6d3b;
+ 		background-color: #fcf8e3;
+ 		border-color: #faebcc;
+ 	}
+
+ 	.tools_page_site-speed-monitor-tools div.grade-d {
+ 		color: #faebcc;
+ 		background-color: #8a6d3b;
+ 		border-color: #faebcc;
+ 	}
+
+ 	.tools_page_site-speed-monitor-tools div.grade-f {
+ 		color: #a94442;
+ 		background-color: #f2dede;
+ 		border-color: #ebccd1;
+ 	}
+
+ /**
+  * Force Complete Link
+  * Cancel Test Link
+  */
+ .tools_page_site-speed-monitor-tools a.force-complete,
+ .tools_page_site-speed-monitor-tools a.cancel-test {
+ 	display: block;
+ 	font-size: 11px;
+ 	margin-top: 3px;
+ }
+
+ .tools_page_site-speed-monitor-tools a.cancel-test {
+ 	color: #a00;
+ }
+
+ 	.tools_page_site-speed-monitor-tools a.force-complete:after {
+ 		font-family: "dashicons";
+ 		content: "\f139";
+ 		vertical-align: middle;
+ 	}
+
+ 	.tools_page_site-speed-monitor-tools a.cancel-test:after {
+ 		font-family: "dashicons";
+ 		content: "\f335";
+ 		vertical-align: middle;
+ 	}
+
+ /**
+  * Test Failed Badge
+  */
+ .tools_page_site-speed-monitor-tools  span.test-failed,
+ .tools_page_site-speed-monitor-tools  span.test-cancelled {
+ 	color: #a94442;
+ 	background-color: #f2dede;
+ 	border: 1px solid #ebccd1;
+ 	padding: 4px 8px;
+ }
+
+ 	.tools_page_site-speed-monitor-tools  span.test-failed:before,
+ 	.tools_page_site-speed-monitor-tools  span.test-cancelled:before {
+ 		font-family: "dashicons";
+ 		content: "\f335";
+ 		vertical-align: middle;
+ 	}
+
+ /**
+  * Tooltip Styles
+  */
+ .tipso_content .test-scores {
+ 	display: inline-block;
+ 	width: 100%;
+ }
+
+ 	.tipso_content .test-scores strong {
+ 		display: block;
+ 		width: 100%;
+ 		margin-bottom: 5px;
+ 	}
+
+ 	.tipso_content .test-scores .score {
+ 		display: inline-block;
+ 		float: left;
+ 		width: 33.333%;
+ 		margin-top: 5px;
+ 	}
+
+ 		.tipso_content .test-scores .score a {
+ 			text-decoration: none;
+ 		}
+
+ 		.tipso_content .test-scores .score a:hover div {
+ 			opacity: .85;
+ 		}
+
+ 		.tipso_content .test-scores .score div {
+ 			display: block;
+ 			width: 25px;
+ 			margin: 0 auto;
+ 			border-radius: 2px;
+ 			color: #666666;
+ 			        transition: opacity .25s ease-in-out;
+ 			   -moz-transition: opacity .25s ease-in-out;
+ 			-webkit-transition: opacity .25s ease-in-out;
+ 			     -o-transition: opacity .25s ease-in-out;
+ 		}
+
+ 		/**
+ 		 * Test Score Grade Colors
+ 		 */
+ 		.tipso_content .test-scores .score.none div {
+ 			background: white;
+ 		}
+
+ 		.tipso_content .test-scores .score.A div {
+ 			background: #9BCE54;
+ 		}
+
+ 		.tipso_content .test-scores .score.B div {
+ 			color: #31708f;
+ 			background: #d9edf7;
+ 		}
+
+ 		.tipso_content .test-scores .score.C div {
+ 			color: #8a6d3b;
+ 			background-color: #fcf8e3;
+ 		}
+
+ 		.tipso_content .test-scores .score.D div {
+ 			color: #faebcc;
+ 			background-color: #8a6d3b;
+ 		}
+
+ 		.tipso_content .test-scores .score.F div {
+ 			color: #a94442;
+ 			background-color: #f2dede;
+ 		}
+
+ 		.tipso_content .test-scores .score div {
+ 			padding: 8px;
+ 		}
+
+ 	.tipso_content .test-scores .score small {
+ 		display: block;
+ 		width: 100%;
+ 	}
+
+ /**
+  * Confirmation Modal
+  */
+ .cp-confirmation  {
+ 	overflow-y: auto;
+ }
+
+ .cp-confirmation-hidden {
+ 	display: none;
+ }
+
+	#TB_window.cp-confirmation {
+		width: 70%;
+	}
+
+ 	.cp-confirmation #TB_ajaxContent p.icon {
+ 		float: left;
+ 		font-size: 30px;
+ 		padding-top: 0;
+ 		margin: 0.65em 10px 0 0;
+ 		color: rgba(232, 152, 152, 0.77);
+ 	}
+
+ 		.cp-confirmation #TB_ajaxContent p.icon span {
+ 			font-size: inherit;
+ 			height: inherit;
+ 			width: inherit;
+ 		}
+
+ 		.cp-confirmation #TB_ajaxContent p.icon + p {
+ 			padding-bottom: 1.75em;
+ 			border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+ 		}
+
+ 	.cp-confirmation #TB_ajaxContent .actions {
+ 		display: block;
+ 		width: 93%;
+ 		position: absolute;
+ 		bottom: 1em;
+ 	}
+
+ 	.cp-confirmation #TB_ajaxContent .actions a:last-child {
+ 		float: right;
+ 	}
+
+ 	.cp-confirmation #TB_ajaxContent .load-data {
+ 		float: right;
+ 		margin: 10px 0;
+ 		padding: 5px 10px;
+ 		border: 1px solid lightgrey;
+ 	}
+
+ 		.cp-confirmation #TB_ajaxContent .load-data h4 {
+ 			margin: 0;
+ 		}
+
+ /**
+  * Site details popup
+  * - Plugins Table
+  * - Additional details table
+  */
+ .cp-confirmation .site-details-plugins-table th.version,
+ .cp-confirmation .site-details-theme-table th.version {
+ 	width: 75px;
+ }
+
+ .cp-confirmation .site-details-plugins-table th.plugin,
+ .cp-confirmation .site-details-theme-table th.theme-name {
+ 	width: 185px;
+ }
+
+ /* Hide the duplicate By: line in the plugin table. */
+ .cp-confirmation .site-details-plugins-table td.description cite {
+ 	display: none;
+ }
+
+ .cp-confirmation .site-details-plugins-table .dashicons-yes {
+ 	color: #30a930;
+ }
+
+ .cp-confirmation .site-details-plugins-table .dashicons-no-alt {
+ 	color: #da7e7e;
+ }
+
+ .cp-confirmation a.close-modal.site-details {
+ 	margin-top: 3em;
+ 	float: right;
+ }
+
+ /**
+  * Load time badges
+  */
+ span.badge {
+ 	background-color: #e0dbdb;
+ 	border: 1px solid transparent;
+ 	color: white;
+ 	padding: 1px 3px;
+ 	font-size: normal;
+ 	font-weight: light;
+ 	font-size: 9px;
+ }
+
+ 	span.badge.great {
+ 		color: #3c763d;
+ 		background-color: #dff0d8;
+ 		border-color: #d6e9c6;
+ 	}
+
+ 	span.badge.average {
+ 		color: #8a6d3b;
+ 		background-color: #fcf8e3;
+ 		border-color: #faebcc;
+ 	}
+
+ 	span.badge.poor {
+ 		color: #a94442;
+ 		background-color: #f2dede;
+ 		border-color: #ebccd1;
+ 	}
+
+ /**
+  * Animation
+  */
+ .cp-animated {
+ 	animation-duration: 0.5s;
+ 	animation-fill-mode: both;
+ }
+
+ 	@keyframes cp-fadeInDown {
+ 		from {
+ 			opacity: 0;
+ 			transform: translate3d(0, -20%, 0);
+ 		}
+
+ 		to {
+ 			opacity: 1;
+ 			transform: none;
+ 		}
+ 	}
+
+ 	.cp-fadeInDown {
+ 		animation-name: cp-fadeInDown;
+ 	}
+
+ 	@keyframes cp-fadeOutUp {
+ 		from {
+ 			opacity: 1;
+ 		}
+
+ 		to {
+ 			opacity: 0;
+ 			transform: translate3d(0, -20%, 0);
+ 		}
+ 	}
+
+ 	.cp-fadeOutUp {
+ 		animation-name: cp-fadeOutUp;
+ 	}

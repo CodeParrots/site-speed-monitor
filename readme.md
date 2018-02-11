@@ -5,7 +5,7 @@
 **Tags:** [website](https://wordpress.org/themes/tags/website/), [speed](https://wordpress.org/themes/tags/speed/), [test](https://wordpress.org/themes/tags/test/), [webpagetest](https://wordpress.org/themes/tags/webpagetest/), [report](https://wordpress.org/themes/tags/report/), [monitor](https://wordpress.org/themes/tags/monitor/), [tester](https://wordpress.org/themes/tags/tester/), [check](https://wordpress.org/themes/tags/check/), [chart](https://wordpress.org/themes/tags/chart/), [graph](https://wordpress.org/themes/tags/graph/)  
 **Requires at least:** 4.0  
 **Requires PHP:** 5.6  
-**Tested up to:** 4.8.1  
+**Tested up to:** 4.9  
 **Stable tag:** 1.0.0  
 
 Site Speed Monitor allows you to monitor your website load times automatically while tracking it's performance.

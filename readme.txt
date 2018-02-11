@@ -3,7 +3,7 @@ Contributors: codeparrots, eherman24
 Tags: website, speed, test, webpagetest, report, monitor, tester, check, chart, graph
 Requires at least: 4.0
 Requires PHP: 5.6
-Tested up to: 4.8.1
+Tested up to: 4.9
 Stable tag: 1.0.0
 
 Site Speed Monitor allows you to monitor your website load times automatically while tracking it's performance.
